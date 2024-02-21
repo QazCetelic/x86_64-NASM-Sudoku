@@ -3,6 +3,9 @@ Sudoku solver written in x86-64 NASM assembly.
 It is statically compiled and doesn't rely on the C stdlib, but does rely on Linux syscalls for I/O and is thus incompatible with other operating systems.
 The produced binary is roughly 1.5KiB.
 
+The Makefile includes instructions to build the executable yourself, but you will still need the `nasm` and `binutils` packages.
+The tasks from the makefile are also used to build and test when a commit is pushed to the main branch.
+
 The execution speed heavily depends on I/O speed and how fast the system can process the syscalls.
 The following chart shows the time required to process a million sudokus when loaded from a RAM disk.
 
