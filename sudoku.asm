@@ -25,21 +25,6 @@ section .bss
 section .text
 	global _start
 
-read_char:
-	mov rax, 0				; sys_read
-	mov rdi, 0				; fd 0 (standard input)
-	mov rsi, char_buf		; ptr to input
-	mov rdx, char_buf_len	; number of bytes to read
-	syscall
-	cmp rax, 0
-	jne .no_eof
-	; exit program if EOF is enountered
-	mov rax, 60
-	mov rdi, 0
-	syscall
-	.no_eof:
-	ret
-
 print:
 	; newline chars are set at setup
 	push rax
