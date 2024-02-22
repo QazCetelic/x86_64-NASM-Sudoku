@@ -1,17 +1,12 @@
 /.gdb_history
 /Makefile
-/benchmark.sh
 /benchmarks 1 million.txt
-/filter_without_backtracking.py
+/benchmarks.csv
+/benchmarks.ods
+/Development Makefile
 /notes.txt
-/output
-/parse_output.py
-/read_debug_output.py
-/result_sudoku.txt
-/solved
-/solved.txt
-/sudoku
 /sudoku.o
-/sudoku_csv_solved_column.txt
-/sudokus_without_backtracking.txt
+/output
+/solved
+/sudoku
 /unsolved
